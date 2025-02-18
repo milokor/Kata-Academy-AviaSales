@@ -11,7 +11,9 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   justify-content: space-between;
-
+@media (max-width:550px) {
+  width: 302px;
+}
 .price {
     font-family: var(--font-family);
     font-weight: 600;

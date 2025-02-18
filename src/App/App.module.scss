@@ -77,6 +77,28 @@
       
       .main, .footer {
         width: 100%;
+        margin-left: 50px;
+      }
+    }
+    @media(max-width: 550px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      > :first-child {
+        margin-left: 20px;
+      }
+      .main, .footer {
+        width: 300px;
+        margin-bottom: 100px;
+      }
+      .footer {
+     margin-left: 0;
+     grid-column: 1;
+     grid-row: 3;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto auto auto;
+      }
+      .noFilters {
+        margin-left: 0;
       }
     }
   }
