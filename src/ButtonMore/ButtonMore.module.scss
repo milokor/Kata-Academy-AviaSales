@@ -1,0 +1,29 @@
+:root {
+  --font-family: "Open Sans", sans-serif;
+}
+button {
+  background: white;
+  border: none;
+}
+.button {
+border-radius: 5px;
+width: 541px;
+height: 50px;
+background: #2196f3;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 12px;
+line-height: 167%;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+text-align: center;
+color: white;
+border: 1px solid lightgrey;
+cursor: pointer;
+
+&:hover{
+  background-color: white;
+  color: #4a4a4a;
+  transition: all 0.4s;
+}
+}

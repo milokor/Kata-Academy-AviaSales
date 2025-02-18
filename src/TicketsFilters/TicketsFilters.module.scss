@@ -1,0 +1,39 @@
+.buttonFilter {
+  width: 181px;
+  height:50px;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  color: #4a4a4a;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 167%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+
+  &:hover {
+    background-color: #2196f3;
+    color: white;
+    transition: all 0.4s;
+  }
+
+  &:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  &:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+}
+
+.buttonActive {
+  @extend .buttonFilter;
+  background-color: #2196f3;
+  color: white;
+  transition: all 0.4s;
+}

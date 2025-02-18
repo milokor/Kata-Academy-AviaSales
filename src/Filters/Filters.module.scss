@@ -1,0 +1,92 @@
+:root {
+  --font-family: "Open Sans", sans-serif;
+}
+
+.filterContainer {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin: 10px;
+  border-radius: 5px;
+  width: 232px;
+  height: 252px;
+  justify-content: center;
+  padding: 20px;
+  gap: 16px;
+
+  .title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #4a4a4a;
+  }
+
+  .visuallyHidden {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+
+    &:checked + .checkmark {
+      background-color: #fff;
+      border: 0.5px solid #2196F3;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 2px;
+        width: 5px;
+        height: 10px;
+        border: solid #2196F3;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  .customCheckbox {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 154%;
+    color: #4a4a4a;
+    width: 232px;
+    height: 40px;
+
+    &:hover {
+      background: #f1fcff;
+    }
+
+    .checkmark {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border-radius: 4px;
+
+      .checkmarkIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 16px;
+        height: 16px;
+        color: transparent;
+        transition: color 0.3s;
+      }
+    }
+  }
+}

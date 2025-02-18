@@ -57,6 +57,16 @@ module.exports = {
       'error',
       { namedComponents: 'arrow-function' },
     ],
+    'implicit-arrow-linebreak': 'off',
+    'function-paren-newline': 'off',
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state'],
+      },
+    ],
+    'operator-linebreak': 'off',
   },
 
   settings: {
