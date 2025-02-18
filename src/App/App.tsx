@@ -23,11 +23,7 @@ export const App: FC = () => {
     <>
       <LinearProgress variant="determinate" value={Math.floor(progress)} />
       <div className={styles.container}>
-        <img
-          src="/public/image/Logo.svg"
-          alt="AviaSales"
-          className={styles.image}
-        />
+        <img src="/image/Logo.svg" alt="AviaSales" className={styles.image} />
         <div className={styles.layout}>
           <FiltersComponent />
           <div className={styles.main}>
